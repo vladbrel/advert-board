@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+    <h1>Главная</h1>
+    {% if ads %}
+        {% for i in ads %}
+        <h4>
+            {{ i.name }}
+        </h4>
+        {% endfor %}
+    {% else %}
+        <p>Нет объявлений</p>
+    {% endif %}
+{% endblock %}
+
+

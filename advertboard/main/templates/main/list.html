@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+{% block title %}
+{% if category %}
+{{category.name}}
+{% else %}
+Список объявлений
+{% endif %}
+{% endblock %}
+{% block content %}
+<h1>Hi</h1>
+{% endblock %}
