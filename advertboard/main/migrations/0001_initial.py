@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(db_index=True, max_length=60, verbose_name='Название')),
-                ('image', models.ImageField(blank=True, upload_to='products/%Y/%m/%d')),
+                ('image', models.ImageField(blank=True, upload_to='ads/%Y/%m/%d')),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('updated', models.DateTimeField(auto_now=True)),
                 ('price', models.DecimalField(decimal_places=2, max_digits=10, verbose_name='Цена')),

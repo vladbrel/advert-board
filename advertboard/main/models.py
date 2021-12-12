@@ -22,7 +22,7 @@ class Ad(models.Model):
     image = models.ImageField(upload_to='ads/%Y/%m/%d', blank=True)
     price = models.DecimalField('Цена', max_digits=10, decimal_places=2)
     description = models.TextField('Описание')
-    category = models.ForeignKey('Category', on_delete=models.CASCADE, related_name='products')
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, related_name='ads')
     created=models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=True)
 
